@@ -21,19 +21,27 @@ export function Navbar() {
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-5 w-5" />
+          <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-full sm:max-w-md">
               <div className="mt-6">
-                <CategoryMenu />
+          <CategoryMenu />
               </div>
             </SheetContent>
           </Sheet>
 
-          <Link href="/" className="text-xl font-bold">
-            Zica Bella
-          </Link>
+            <Link
+              href="/"
+              className=""
+            >
+              <img
+                src="/icon/icon.png"
+                alt="Zica Bella Logo"
+                className="h-auto w-auto md:h-10"
+                
+              />
+            </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-6">
@@ -52,9 +60,9 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+          {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </Button>
+          </Button> */}
           <Button variant="ghost" size="icon">
             <Search className="h-5 w-5" />
           </Button>

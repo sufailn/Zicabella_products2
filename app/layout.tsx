@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Zica Bella | Fashion Brand",
   description: "Discover your style with Zica Bella fashion",
-    generator: 'v0.dev'
+    generator: 'Zica Bella'
 }
 
 export default function RootLayout({

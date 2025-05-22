@@ -27,12 +27,22 @@ export function FeaturedCollection({ products }: FeaturedCollectionProps) {
 
   return (
     <section className="relative">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-3">Featured Collection</h1>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          Explore our latest arrivals with immersive 3D views and detailed fabric inspection.
-        </p>
-      </div>
+  <div
+    className="flex flex-col justify-center items-center text-center mb-8 rounded-lg w-full"
+    style={{
+      backgroundImage: "url('/icon/banner.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      minHeight: "200px",
+      height: "35vw",
+      maxHeight: "380px",
+    }}
+  >
+    {/* <h1 className="text-2xl md:text-4xl text-white font-bold mb-3">Featured Collection</h1>
+    <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+      Explore our latest arrivals with immersive 3D views and detailed fabric inspection.
+    </p> */}
+  </div>
 
       <div className="flex justify-center mb-8">
         <div className="flex gap-2 overflow-x-auto p-1">
