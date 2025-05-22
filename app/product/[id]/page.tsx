@@ -65,7 +65,7 @@ export default function ProductPage() {
           ) : (
             <div className="relative aspect-square overflow-hidden rounded-lg border border-border">
               <Image
-                src={product.image || "/placeholder.svg?height=600&width=600"}
+                src={product.image || "/explore/Black Cargo Joggers.jpeg?height=600&width=600"}
                 alt={product.name}
                 fill
                 className="object-cover"
@@ -153,8 +153,8 @@ export default function ProductPage() {
             <Button
               className="flex-1"
               size="lg"
-              onClick={() => addToCart({ ...product, quantity })}
-              disabled={!selectedSize}
+              onClick={() => addToCart(product)}
+                          disabled={!selectedSize}
             >
               <ShoppingCart className="h-5 w-5 mr-2" />
               Add to Cart

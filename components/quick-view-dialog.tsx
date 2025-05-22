@@ -41,7 +41,7 @@ export function QuickViewDialog({ product, open, onOpenChange }: QuickViewDialog
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[900px] p-0 overflow-hidden">
+      <DialogContent className="sm:max-w-[900px] max-h-[90vh] overflow-y-auto p-0">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="relative aspect-square md:aspect-auto md:h-full">
             {view3D ? (
@@ -73,7 +73,7 @@ export function QuickViewDialog({ product, open, onOpenChange }: QuickViewDialog
             </Button>
           </div>
 
-          <div className="p-6 flex flex-col">
+          <div className="p-6 flex flex-col max-h-[80vh] overflow-y-auto">
             <DialogTitle className="text-2xl font-bold mb-1">{product.name}</DialogTitle>
             <div className="text-sm text-muted-foreground mb-4">
               {product.category} • {product.subCategory}
