@@ -123,7 +123,7 @@ export function QuickViewDialog({ product, open, onOpenChange }: QuickViewDialog
               <Button
                 className="flex-1"
                 onClick={() => {
-                  addToCart({ ...product, quantity })
+                  addToCart(product)
                   onOpenChange(false)
                 }}
                 disabled={!selectedSize}
