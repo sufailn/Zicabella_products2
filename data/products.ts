@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "Black Oversized Tee",
-    category: "Topwear",
+    category: "Topwears",
     subCategory: "New Arrivals",
     price: 799,
     image: "/explore/Black%20Oversized%20Tee.jpeg",
